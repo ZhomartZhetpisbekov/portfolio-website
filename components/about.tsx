@@ -21,8 +21,8 @@ const About = () => {
       <div className="flex flex-col gap-y-5 lg:flex-row lg:justify-between lg:gap-x-5">
         <div className="flex flex-col gap-y-5 md:max-w-3xl py-5">
           <p>
-            My name is Zhomart Zhetpisbekov. I'm a software engineering student
-            from Kazakhstan. I'm passionate mostly about two things: coding and
+            My name is Zhomart Zhetpisbekov. I&apos;m a software engineering student
+            from Kazakhstan. I&apos;m passionate mostly about two things: coding and
             making music. While the first lets me turn my ideas into reality
             and, of course, feeds me, the latter covers the need to share my
             thoughts and worries with my listeners.
