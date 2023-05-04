@@ -1,4 +1,4 @@
-import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
+import { LanguageIcon, PaperAirplaneIcon, WrenchIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
 const About = () => {
@@ -34,48 +34,48 @@ const About = () => {
             development, some experience in mobile app development, and average
             knowledge in Data Science.
           </p>
-          <p>My tech stack for now:</p>
-          <div className="flex justify-between">
-            <ul className="flex flex-col gap-y-2">
+          <p className="font-bold text-[#E50914]">TECH STACK:</p>
+          <div className="flex flex-col gap-y-2 justify-between md:flex-row">
+            <ul className="flex flex-col gap-y-2 ">
               <li className="skillsItem">
                 <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
-                Next.js / React.js
+                NEXT.JS / REACT.JS
               </li>
               <li className="skillsItem">
                 <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
-                Vue.js
+                VUE.JS
               </li>
               <li className="skillsItem">
                 <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
-                Spring
-              </li>
-            </ul>
-            <ul className="flex flex-col gap-y-2">
-              <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
-                Typescript/Javascript
-              </li>
-              <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
-                Python
-              </li>
-              <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
-                Java
+                SPRING
               </li>
             </ul>
             <ul className="flex flex-col gap-y-2">
               <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
-                Figma
+                <LanguageIcon className="w-4 h-4 text-[#E50914]" />
+                TYPESCRIPT
               </li>
               <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
-                Tailwind
+                <LanguageIcon className="w-4 h-4 text-[#E50914]" />
+                PYTHON
               </li>
               <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
-                Firebase
+                <LanguageIcon className="w-4 h-4 text-[#E50914]" />
+                JAVA
+              </li>
+            </ul>
+            <ul className="flex flex-col gap-y-2">
+              <li className="skillsItem">
+                <WrenchIcon className="w-4 h-4 text-[#E50914]" />
+                FIGMA
+              </li>
+              <li className="skillsItem">
+                <WrenchIcon className="w-4 h-4 text-[#E50914]" />
+                TAILWIND
+              </li>
+              <li className="skillsItem">
+                <WrenchIcon className="w-4 h-4 text-[#E50914]" />
+                FIREBASE
               </li>
             </ul>
           </div>
@@ -83,7 +83,7 @@ const About = () => {
 
         <div
           // style={{ border: "1px solid blue" }}
-          className="relative min-w-[28rem] h-[20rem] border border-[gray] customShadow
+          className="relative min-w-[20rem] h-[20rem] border border-[gray] customShadow
           lg:h-[24rem] lg:w-[28rem]"
         >
           <Image

@@ -19,7 +19,7 @@ const Banner = () => {
       >
         <div
           // style={{ border: "1px solid blue" }}
-          className="relative min-w-[28rem] h-[14rem] border border-[gray] customShadow
+          className="relative min-w-[20rem] h-[14rem] border border-[gray] customShadow
           lg:h-[20rem] lg:w-[36rem]"
         >
           <Image
