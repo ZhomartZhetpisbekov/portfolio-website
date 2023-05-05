@@ -1,5 +1,6 @@
 export const experience = [
   {
+    id: 1,
     position: "Frontend Developer",
     company: "ASRM",
     period: "September 2022 - January 2022",
@@ -10,6 +11,7 @@ export const experience = [
     ]
   },
   {
+    id: 2,
     position: "Frontend Developer",
     company: "BCPD LTD.",
     period: "April 2022 - October 2022",
@@ -20,6 +22,7 @@ export const experience = [
     ]
   },
   {
+    id: 3,
     position: "IELTS Trainer",
     company: "ALBUS",
     period: "April 2022 - October 2022",
