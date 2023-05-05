@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="h-screen px-5">
+    <section className="h-screen px-5">
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
         <Image
           className="customBlur"
@@ -36,13 +36,13 @@ const Banner = () => {
           <h3 className="">HI, MY NAME IS </h3>
           <h1 className="text-5xl">ZHOMART ZHETPISBEKOV</h1>
           <h1 className="">FRONTEND DEVELOPER / SOFTWARE ENGINEER</h1>
-          <button className="bg-[#E50914] border border-[gray] py-3 font-light customShadow text-white lg:max-w-md
-          transition duration-[.3s] hover:bg-white hover:text-[#E50914]">
+          <button className="bg-[var(--redClr)] border border-[gray] py-3 font-light customShadow text-white lg:max-w-md
+          transition duration-[.3s] hover:bg-white hover:text-[--redClr]">
             CONTACT ME
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className={`${isScrolled && "bg-[#141414]"}`}>
       <div className="flex items-center gap-x-1 cursor-pointer">
-        <CommandLineIcon className="w-10 h-10 text-[#E50914]" />
+        <CommandLineIcon className="w-10 h-10 text-[--redClr]" />
         <p className="text-lg font-bold text-white">Zhomart Zhetpisbekov</p>
       </div>
       <div className="flex items-center gap-x-10">
@@ -34,8 +34,8 @@ const Header = () => {
           <li className="headerLink">PROJECTS</li>
           <li className="headerLink">CONTACT</li>
         </ul>
-        <button className="bg-[#E50914] px-6 py-2 border border-[gray] customShadow text-white
-        transition duration-[.3s] hover:bg-white hover:text-[#E50914]">
+        <button className="bg-[--redClr] px-6 py-2 border border-[gray] customShadow text-white
+        transition duration-[.3s] hover:bg-white hover:text-[--redClr]">
           RESUME
         </button>
       </div>

@@ -6,6 +6,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 @layer base {
+  :root {
+    --redClr: #e50914;
+    --darkClr: #141414;
+    --grayClr: #d9d7d7;
+  }
+
   body {
     @apply bg-[#141414] text-white;
     font-family: "Roboto Mono", monospace;
@@ -19,12 +25,21 @@
 
 @layer components {
   .headerLink {
-    @apply hidden md:inline font-light text-[#d9d7d7] cursor-pointer 
+    @apply hidden md:inline font-light text-[var(--grayClr)] cursor-pointer 
     transition duration-[.3s] hover:text-white;
   }
 
   .skillsItem {
     @apply flex items-center gap-x-2;
+  }
+
+  .expLink {
+    @apply px-6 py-2 cursor-pointer transition-all duration-[.4s] hover:bg-[var(--redClr)] border-b-2 border-[gray]
+    md:max-w-[10rem] md:border-b-0 md:border-l-2;
+  }
+
+  .activeLink {
+    @apply bg-[var(--redClr)] border-white;
   }
 
   .gradient {

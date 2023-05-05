@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div
+    <section
       // style={{ border: "1px solid green" }}
-      className="relative min-h-screen flex flex-col gap-y-5 py-14 px-5
+      className="relative min-h-screen flex flex-col gap-y-5 py-10 px-5
       md:px-14"
     >
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
@@ -17,7 +17,7 @@ const About = () => {
           objectFit="cover"
         />
       </div>
-      <h1 className="text-5xl text-[#E50914]">ABOUT ME</h1>
+      <h1 className="text-5xl text-[--redClr]">ABOUT ME</h1>
       <div className="flex flex-col gap-y-5 lg:flex-row lg:justify-between lg:gap-x-5">
         <div className="flex flex-col gap-y-5 md:max-w-3xl py-5">
           <p>
@@ -34,47 +34,47 @@ const About = () => {
             development, some experience in mobile app development, and average
             knowledge in Data Science.
           </p>
-          <p className="font-bold text-[#E50914]">TECH STACK:</p>
+          <p className="font-bold text-[--redClr]">TECH STACK:</p>
           <div className="flex flex-col gap-y-2 justify-between md:flex-row">
             <ul className="flex flex-col gap-y-2 ">
               <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
+                <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
                 NEXT.JS / REACT.JS
               </li>
               <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
+                <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
                 VUE.JS
               </li>
               <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[#E50914]" />
+                <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
                 SPRING
               </li>
             </ul>
             <ul className="flex flex-col gap-y-2">
               <li className="skillsItem">
-                <LanguageIcon className="w-4 h-4 text-[#E50914]" />
+                <LanguageIcon className="w-4 h-4 text-[--redClr]" />
                 TYPESCRIPT
               </li>
               <li className="skillsItem">
-                <LanguageIcon className="w-4 h-4 text-[#E50914]" />
+                <LanguageIcon className="w-4 h-4 text-[--redClr]" />
                 PYTHON
               </li>
               <li className="skillsItem">
-                <LanguageIcon className="w-4 h-4 text-[#E50914]" />
+                <LanguageIcon className="w-4 h-4 text-[--redClr]" />
                 JAVA
               </li>
             </ul>
             <ul className="flex flex-col gap-y-2">
               <li className="skillsItem">
-                <WrenchIcon className="w-4 h-4 text-[#E50914]" />
+                <WrenchIcon className="w-4 h-4 text-[--redClr]" />
                 FIGMA
               </li>
               <li className="skillsItem">
-                <WrenchIcon className="w-4 h-4 text-[#E50914]" />
+                <WrenchIcon className="w-4 h-4 text-[--redClr]" />
                 TAILWIND
               </li>
               <li className="skillsItem">
-                <WrenchIcon className="w-4 h-4 text-[#E50914]" />
+                <WrenchIcon className="w-4 h-4 text-[--redClr]" />
                 FIREBASE
               </li>
             </ul>
@@ -94,7 +94,7 @@ const About = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

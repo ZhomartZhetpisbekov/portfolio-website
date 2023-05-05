@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Banner from "@/components/banner";
+import Experience from "@/components/experience";
 import Header from "@/components/header";
 import Head from "next/head";
 
@@ -14,7 +15,7 @@ const Home = () => {
       <main>
         <Banner />
         <About />
-        {/* <Experience /> */}
+        <Experience />
         {/* <Projects /> */}
       </main>
     </div>
