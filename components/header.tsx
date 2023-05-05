@@ -25,7 +25,7 @@ const Header = () => {
     <header className={`${isScrolled && "bg-[#141414]"}`}>
       <div className="flex items-center gap-x-1 cursor-pointer">
         <CommandLineIcon className="w-10 h-10 text-[--redClr]" />
-        <p className="text-lg font-bold text-white">Zhomart Zhetpisbekov</p>
+        <p className="text-lg font-bold text-white">Zhetpisbekov</p>
       </div>
       <div className="flex items-center gap-x-10">
         <ul className="flex items-center gap-x-10">

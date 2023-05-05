@@ -20,7 +20,7 @@ const ExpWidget = () => {
   return (
     <article
       className="flex flex-col gap-y-5 md:flex-row md:justify-center md:gap-x-4 md:py-20 md:px-0
-    bg-[#141414]/80 px-5"
+    bg-[#141414]/80 px-5 customShadow"
     >
       <ul className="w-full flex md:flex-col md:max-w-[10rem]">
         {experience.map((item) => (

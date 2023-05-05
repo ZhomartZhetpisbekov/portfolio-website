@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <section className="h-screen px-5">
+    <section className="h-screen">
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
         <Image
           className="customBlur"
@@ -13,12 +13,10 @@ const Banner = () => {
         />
       </div>
       <div
-        // style={{ border: "1px solid blue" }}
-        className="flex flex-col-reverse h-[43rem] justify-start gap-y-16
-        lg:flex-row lg:justify-between lg:items-center lg:px-14 lg:gap-x-5" 
+        className="flex flex-col-reverse h-[43rem] justify-start gap-y-16 px-5
+        lg:flex-row lg:justify-between lg:items-center lg:px-24 lg:gap-x-5" 
       >
         <div
-          // style={{ border: "1px solid blue" }}
           className="relative min-w-[20rem] h-[14rem] border border-[gray] customShadow
           lg:h-[20rem] lg:w-[36rem]"
         >

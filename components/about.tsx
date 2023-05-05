@@ -6,7 +6,7 @@ const About = () => {
     <section
       // style={{ border: "1px solid green" }}
       className="relative min-h-screen flex flex-col gap-y-5 py-10 px-5
-      md:px-14"
+      md:px-24"
     >
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
         <Image
@@ -19,7 +19,7 @@ const About = () => {
       </div>
       <h1 className="text-5xl text-[--redClr]">ABOUT ME</h1>
       <div className="flex flex-col gap-y-5 lg:flex-row lg:justify-between lg:gap-x-5">
-        <div className="flex flex-col gap-y-5 md:max-w-3xl py-5">
+        <div className="flex flex-col gap-y-5 md:max-w-2xl py-5">
           <p>
             My name is Zhomart Zhetpisbekov. I&apos;m a software engineering student
             from Kazakhstan. I&apos;m passionate mostly about two things: coding and
