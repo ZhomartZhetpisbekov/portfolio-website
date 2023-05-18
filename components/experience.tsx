@@ -1,9 +1,14 @@
 import Image from "next/image";
 import ExpWidget from "./molecules/exp-widget";
+import { forwardRef, useImperativeHandle, useRef } from "react";
 
-const Experience = () => {
+const Experience = forwardRef((props, ref) => {
+  const expRef = useRef<HTMLElement>(null);
+
+  // Expose the bannerRef to the parent component
+  useImperativeHandle(ref, () => expRef.current);
   return (
-    <section className="relative h-screen flex flex-col gap-y-10 py-10 px-0
+    <section ref={expRef} className="relative h-screen flex flex-col gap-y-10 py-10 px-0
     md:px-24">
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
         <Image
@@ -20,6 +25,6 @@ const Experience = () => {
       </div>
     </section>
   )
-}
+});
 
 export default Experience;

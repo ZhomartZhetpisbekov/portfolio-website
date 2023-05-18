@@ -1,8 +1,13 @@
 import Image from "next/image";
+import { forwardRef, useImperativeHandle, useRef } from "react";
 
-const Banner = () => {
+const Banner = forwardRef((props, ref) => {
+  const bannerRef = useRef<HTMLElement>(null);
+
+  // Expose the bannerRef to the parent component
+  useImperativeHandle(ref, () => bannerRef.current);
   return (
-    <section className="h-screen">
+    <section ref={bannerRef} className="h-screen">
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
         <Image
           className="customBlur"
@@ -42,6 +47,6 @@ const Banner = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Banner;

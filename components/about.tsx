@@ -1,9 +1,14 @@
 import { LanguageIcon, PaperAirplaneIcon, WrenchIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import { forwardRef, useImperativeHandle, useRef } from "react";
 
-const About = () => {
+const About = forwardRef((props, ref) => {
+  const aboutRef = useRef<HTMLElement>(null);
+
+  // Expose the bannerRef to the parent component
+  useImperativeHandle(ref, () => aboutRef.current);
   return (
-    <section
+    <section ref={aboutRef}
       // style={{ border: "1px solid green" }}
       className="relative min-h-screen flex flex-col gap-y-5 py-10 px-5
       md:px-24"
@@ -96,6 +101,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
 
 export default About;
