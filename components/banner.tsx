@@ -49,4 +49,6 @@ const Banner = forwardRef((props, ref) => {
   );
 });
 
+Banner.displayName = 'Banner'
+
 export default Banner;

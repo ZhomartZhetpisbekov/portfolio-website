@@ -22,10 +22,12 @@ const Projects = forwardRef((props, ref) => {
       </div>
       <h1 className="text-5xl text-[--redClr] px-5 md:px-0">Projects</h1>
       <div className="mx-auto flex flex-col gap-y-20 md:gap-y-40">
-        {projects.map((item) => <ProjectsWidget {...item} />)}
+        {projects.map((item) => <ProjectsWidget key={item.id} {...item} />)}
       </div>
     </section>
   )
 });
+
+Projects.displayName = 'Projects'
 
 export default Projects;
