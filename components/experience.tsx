@@ -10,7 +10,7 @@ const Experience = forwardRef((props, ref) => {
   return (
     <section ref={expRef} className="relative h-screen flex flex-col gap-y-10 py-10 px-0
     md:px-24">
-      <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
+      <div className="absolute top-0 left-0 -z-10 h-full w-screen">
         <Image
           className="customBlur"
           src="/images/room-bw.jpg"
@@ -19,7 +19,7 @@ const Experience = forwardRef((props, ref) => {
           objectFit="cover"
         />
       </div>
-      <h1 className="text-5xl text-[--redClr] px-5 md:px-0">Experience</h1>
+      <h1 className="text-5xl text-[--redClr] px-5 md:px-0 text-center">Experience</h1>
       <div className="mx-auto">
         <ExpWidget />
       </div>

@@ -1,3 +1,5 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 type Project = {
@@ -29,15 +31,16 @@ const MobileProjects = (props: Project) => {
           </h1>
         </a>
 
-        <p className="text-sm px-5 py-5 bg-[#141414]/60 customShadow">{props.description}</p>
+        <p className="text-sm px-5 py-5 bg-[#141414]/60 customShadow">
+          {props.description}
+        </p>
         <p className="text-sm text-gray-400">{props.stack}</p>
-        <a className="flex gap-x-2 items-center text-sm" href={props.ghLink}>
-          <Image
-            width={20}
-            height={20}
-            src="/images/gh-icon.png"
-            alt="Github icon"
-          />
+        <a
+          className="flex gap-x-2 items-center text-sm hover:text-[var(--redClr)] transition duration-[.3s]"
+          href={props.ghLink}
+          target="_blank"
+        >
+          <FontAwesomeIcon className="w-5 h-5" icon={faGithub} />
           GH REPO
         </a>
       </div>

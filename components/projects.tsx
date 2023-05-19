@@ -20,8 +20,8 @@ const Projects = forwardRef((props, ref) => {
           objectFit="cover"
         />
       </div>
-      <h1 className="text-5xl text-[--redClr] px-5 md:px-0">Projects</h1>
-      <div className="mx-auto flex flex-col gap-y-20 md:gap-y-40">
+      <h1 className="text-5xl text-[--redClr] px-5 md:px-0 text-center">Projects</h1>
+      <div className="mx-auto flex flex-col gap-y-20 md:gap-y-40 lg:max-w-[64rem]">
         {projects.map((item) => <ProjectsWidget key={item.id} {...item} />)}
       </div>
     </section>

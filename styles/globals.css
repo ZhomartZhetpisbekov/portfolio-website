@@ -42,6 +42,10 @@
     @apply bg-[var(--redClr)] border-white;
   }
 
+  .socialsLink {
+    @apply hover:text-[var(--redClr)] w-5 h-5 cursor-pointer text-white transition duration-[.3s]
+  }
+
   .gradient {
     background: radial-gradient(rgba(0, 0, 0, 0.05), rgba(73, 73, 73, 0.5));
   }

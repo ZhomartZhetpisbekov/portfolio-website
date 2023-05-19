@@ -1,3 +1,10 @@
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { forwardRef, useImperativeHandle, useRef } from "react";
 
@@ -18,37 +25,50 @@ const Banner = forwardRef((props, ref) => {
         />
       </div>
       <div
-        className="flex flex-col-reverse h-[43rem] justify-start gap-y-16 px-5
-        lg:flex-row lg:justify-between lg:items-center lg:px-24 lg:gap-x-5" 
+        className="flex flex-col h-screen justify-start items-center gap-y-10 px-5 py-20
+        lg:flex-row-reverse lg:justify-center lg:items-center lg:px-24 lg:gap-x-5"
       >
+        <div className="lg:hidden flex flex-col gap-y-2 text-center">
+          <h3 className="">HI, MY NAME IS </h3>
+          <h1 className="text-5xl">ZHOMART ZHETPISBEKOV</h1>
+        </div>
         <div
-          className="relative min-w-[20rem] h-[14rem] border border-[gray] customShadow
-          lg:h-[20rem] lg:w-[36rem]"
+          className="relative w-[20rem] h-[20rem]
+          "
         >
           <Image
-            src="/images/eden-in-car.jpeg"
-            alt="Man in car"
+            src="/images/me-moji.png"
+            alt="Zhomart with laptop"
             fill
             objectFit="cover"
           />
         </div>
-        <div
-          // style={{ border: "1px solid yellow" }}
-          className="flex flex-col gap-y-2"
-        >
-          <h3 className="">HI, MY NAME IS </h3>
-          <h1 className="text-5xl">ZHOMART ZHETPISBEKOV</h1>
-          <h1 className="">FRONTEND DEVELOPER / SOFTWARE ENGINEER</h1>
-          <button className="bg-[var(--redClr)] border border-[gray] py-3 font-light customShadow text-white lg:max-w-md
-          transition duration-[.3s] hover:bg-white hover:text-[--redClr]">
-            CONTACT ME
-          </button>
+        <div className="flex flex-col gap-y-2 text-center">
+          <h3 className="hidden lg:inline">HI, MY NAME IS </h3>
+          <h1 className="hidden lg:inline text-5xl">ZHOMART ZHETPISBEKOV</h1>
+          <h1 className="text-3xl text-[var(--redClr)] max-lg:bg-[#141414]/60 max-lg:customShadow">
+            FRONTEND DEVELOPER
+          </h1>
+          <div className="flex gap-x-3 justify-center">
+            <a target="_blank" href="https://www.linkedin.com/in/zhomart-zhetpisbekov-a15b90235/">
+              <FontAwesomeIcon className="socialsLink" icon={faLinkedin} />
+            </a>
+            <a target="_blank" href="https://github.com/ZhomartZhetpisbekov">
+              <FontAwesomeIcon className="socialsLink" icon={faGithub} />
+            </a>
+            <a target="_blank" href="https://instagram.com/zhoma.doma?igshid=OGQ5ZDc2ODk2ZA==">
+              <FontAwesomeIcon className="socialsLink" icon={faInstagram} />
+            </a>
+            <a target="_blank" href="https://t.me/+77051291444">
+              <FontAwesomeIcon className="socialsLink" icon={faTelegram} />
+            </a>
+          </div>
         </div>
       </div>
     </section>
   );
 });
 
-Banner.displayName = 'Banner'
+Banner.displayName = "Banner";
 
 export default Banner;

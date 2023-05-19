@@ -40,7 +40,12 @@ const Home = () => {
     <div className="relative h-screen gradient">
       <Head>
         <title>Zhomart Zhetpisbekov</title>
-        <link rel="icon" href="/favicon.ico"/>
+        <meta 
+          name="description"
+          content="Zhomart Zhetpisbekov's developer portfolio website, which highlights his professional skills, expertise, and projects."
+        />
+        <link rel="icon" href="/logo-icon.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header handleClick={handleClick} />
       <main>
