@@ -14,7 +14,7 @@ const About = forwardRef((props, ref) => {
   return (
     <section
       ref={aboutRef}
-      className="relative min-h-screen flex flex-col items-center gap-y-10 py-20 px-5
+      className="relative min-h-screen flex flex-col items-center gap-y-10 py-20 px-5 scroll-mt-5
       md:px-24"
     >
       <div className="absolute top-0 left-0 -z-10 h-full w-screen">

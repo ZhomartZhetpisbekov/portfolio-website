@@ -8,7 +8,7 @@ const Experience = forwardRef((props, ref) => {
   // Expose the bannerRef to the parent component
   useImperativeHandle(ref, () => expRef.current);
   return (
-    <section ref={expRef} className="relative h-screen flex flex-col gap-y-10 py-10 px-0
+    <section ref={expRef} className="relative h-screen flex flex-col gap-y-10 py-10 px-0 scroll-mt-12
     md:px-24">
       <div className="absolute top-0 left-0 -z-10 h-full w-screen">
         <Image

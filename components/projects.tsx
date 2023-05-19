@@ -9,7 +9,7 @@ const Projects = forwardRef((props, ref) => {
   // Expose the projectsRef to the parent component
   useImperativeHandle(ref, () => projectsRef.current);
   return (
-    <section ref={projectsRef} className="relative flex flex-col gap-y-10 py-10 px-0
+    <section ref={projectsRef} className="relative flex flex-col gap-y-10 py-10 px-0 scroll-mt-12
     md:px-24">
       <div className="absolute top-0 left-0 -z-10 h-full w-screen">
         <Image 
