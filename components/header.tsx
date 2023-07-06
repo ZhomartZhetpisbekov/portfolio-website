@@ -43,7 +43,7 @@ const Header = ({ handleClick }: { handleClick: (target: string) => void }) => {
           </li>
           <li className="headerLink">CONTACT</li>
         </ul>
-        <a href="/Zhomart_CV_overleaf.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/Zhomart_CV.pdf" target="_blank" rel="noopener noreferrer">
           <button
             className="bg-[--redClr] px-6 py-2 border border-[gray] customShadow text-white
         transition duration-[.3s] hover:bg-white hover:text-[--redClr]"

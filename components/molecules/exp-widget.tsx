@@ -36,7 +36,7 @@ const ExpWidget = () => {
       <div className="flex flex-col py-5 gap-y-3 md:max-w-[30rem] md:py-0">
         <h1 className="font-bold text-xl">
           {`${activeJob.position} `}
-          <span className="text-[--redClr]">{`@ ${activeJob.company}`}</span>
+          <span className="text-[--redClr]">{`@${activeJob.company}`}</span>
         </h1>
         <p className="text-[--grayClr] text-sm">{activeJob.period}</p>
         <ul className="flex flex-col gap-y-3">
