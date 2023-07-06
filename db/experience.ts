@@ -5,9 +5,9 @@ export const experience = [
     company: "Borderless",
     period: "June 2023 - Present",
     description: [
-      "Developed Prisma schemas for setting up postgres database",
-      "Built website scrapers and populated database",
-      "Worked on developing new features in UX/UI with React and TailwindCSS"
+      "Built web scrapers with Node.js to collect information for the knowledge base",
+      "Created queries and handled database manipulations with Prisma",
+      "Built a user-friendly UI/UX for a new website feature using React and Tailwind"
     ]
   },
   {
@@ -23,13 +23,13 @@ export const experience = [
   },
   {
     id: 3,
-    position: "Frontend Developer",
+    position: "Software Engineer",
     company: "BCPD LTD.",
     period: "April 2022 - October 2022",
     description: [
-      "Developed dynamic and browser-compatible pages using Next.js, TypeScript, and MUI",
-      "Worked in an agile environment with weekly stand-ups to design the user UX journey",
-      "Contributed to the organization of EdTech Forum"
+      "Developed dynamic and browser-compatible pages using Next.js, TypeScript, and SASS",
+      "Built a CV parser using Python, optimizing it to handle the average format of resumes, improving efficiency in processing candidate information",
+      "Collaborated closely with UI/UX designers and the team to plan and optimize the UX journey"
     ]
   },
 ]
