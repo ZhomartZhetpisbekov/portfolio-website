@@ -14,7 +14,7 @@ type Project = {
 
 const MobileProjects = (props: Project) => {
   return (
-    <article className="relative w-screen flex flex-col bg-[#141414]/80 customShadow border border-[gray]">
+    <article className="relative w-full flex flex-col bg-[#141414]/80 customShadow border border-[gray]">
       <div className="absolute top-0 left-0 -z-10 h-full w-full">
         <Image
           className="slightBlur"

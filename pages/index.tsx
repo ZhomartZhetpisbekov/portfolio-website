@@ -37,7 +37,7 @@ const Home = () => {
     }
   };
   return (
-    <div className="relative h-screen gradient">
+    <div className="w-full relative h-screen gradient">
       <Head>
         <title>Zhomart Zhetpisbekov</title>
         <meta 

@@ -14,8 +14,8 @@ const Banner = forwardRef((props, ref) => {
   // Expose the bannerRef to the parent component
   useImperativeHandle(ref, () => bannerRef.current);
   return (
-    <section ref={bannerRef} className="h-screen">
-      <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
+    <section ref={bannerRef} className="h-screen w-full">
+      <div className="absolute top-0 left-0 -z-10 h-[95vh] w-full">
         <Image
           className="customBlur"
           src="/images/bridge-bw.jpg"
@@ -47,16 +47,22 @@ const Banner = forwardRef((props, ref) => {
           <h3 className="hidden lg:inline">HI, MY NAME IS </h3>
           <h1 className="hidden lg:inline text-5xl">ZHOMART ZHETPISBEKOV</h1>
           <h1 className="text-3xl text-[var(--redClr)] max-lg:bg-[#141414]/60 max-lg:customShadow">
-            FRONTEND DEVELOPER
+            SOFTWARE ENGINEER
           </h1>
           <div className="flex gap-x-3 justify-center">
-            <a target="_blank" href="https://www.linkedin.com/in/zhomart-zhetpisbekov-a15b90235/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/zhomart-zhetpisbekov-a15b90235/"
+            >
               <FontAwesomeIcon className="socialsLink" icon={faLinkedin} />
             </a>
             <a target="_blank" href="https://github.com/ZhomartZhetpisbekov">
               <FontAwesomeIcon className="socialsLink" icon={faGithub} />
             </a>
-            <a target="_blank" href="https://instagram.com/zhoma.doma?igshid=OGQ5ZDc2ODk2ZA==">
+            <a
+              target="_blank"
+              href="https://instagram.com/zhoma.doma?igshid=OGQ5ZDc2ODk2ZA=="
+            >
               <FontAwesomeIcon className="socialsLink" icon={faInstagram} />
             </a>
             <a target="_blank" href="https://t.me/+77051291444">

@@ -41,9 +41,13 @@ const Header = ({ handleClick }: { handleClick: (target: string) => void }) => {
           <li onClick={() => handleClick("projects")} className="headerLink">
             PROJECTS
           </li>
-          <li className="headerLink">CONTACT</li>
+          {/* <li className="headerLink">CONTACT</li> */}
         </ul>
-        <a href="/Zhomart_CV.pdf" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://drive.google.com/file/d/1DRy3-A-I-yJCKr5QDjZEqp-qFnhp7JBn/view"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button
             className="bg-[--redClr] px-6 py-2 border border-[gray] customShadow text-white
         transition duration-[.3s] hover:bg-white hover:text-[--redClr]"

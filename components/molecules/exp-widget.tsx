@@ -19,7 +19,7 @@ const ExpWidget = () => {
 
   return (
     <article
-      className="flex flex-col gap-y-5 md:flex-row md:justify-center md:gap-x-4 md:py-20 md:px-0
+      className="w-full flex flex-col gap-y-5 md:flex-row md:justify-center md:gap-x-4 md:py-20 md:px-0
     bg-[#141414]/80 px-5 customShadow"
     >
       <ul className="w-full flex md:flex-col md:max-w-[10rem]">
@@ -41,10 +41,7 @@ const ExpWidget = () => {
         <p className="text-[--grayClr] text-sm">{activeJob.period}</p>
         <ul className="flex flex-col gap-y-3">
           {activeJob.description.map((item) => (
-            <li
-              key={item}
-              className="relative flex items-start gap-x-2 "
-            >
+            <li key={item} className="relative flex items-start gap-x-2 ">
               <PaperAirplaneIcon className="absolute top-0 left 0 w-4 h-4 mt-1" />
               <p className="mx-8 left-5">{item}</p>
             </li>

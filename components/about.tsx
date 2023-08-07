@@ -14,10 +14,10 @@ const About = forwardRef((props, ref) => {
   return (
     <section
       ref={aboutRef}
-      className="relative min-h-screen flex flex-col items-center gap-y-10 py-20 px-5 scroll-mt-5
+      className="w-full relative min-h-screen flex flex-col items-center gap-y-10 py-20 px-5 scroll-mt-5
       md:px-24"
     >
-      <div className="absolute top-0 left-0 -z-10 h-full w-screen">
+      <div className="absolute top-0 left-0 -z-10 h-full w-full">
         <Image
           className="customBlur"
           src="/images/night-moon.jpeg"
@@ -31,16 +31,20 @@ const About = forwardRef((props, ref) => {
       <div className="flex flex-col items-center gap-y-5 lg:flex-row-reverse lg:justify-center lg:max-w-[58rem] lg:gap-x-10">
         <div className="flex flex-col gap-y-5 py-5">
           <p>
-            My name is Zhomart Zhetpisbekov. I&apos;m a software engineering
-            student from Kazakhstan. I&apos;m passionate about building
-            beautiful and interactive interfaces for the web. Writing clean,
-            accessible, and human code matters to me
+            I am Zhomart Zhetpisbekov, dedicated Computer Science student with
+            strong foundation in system design, algorithms, and data structures.
+            Excellent leadership abilities and commendable communication skills,
+            effectively translating technical knowledge into actionable
+            strategies
           </p>
           <p>
             Besides coding, I really enjoy writing music. You can check out some
             of my songs on{" "}
             <span className="underline font-bold hover:text-[var(--redClr)] transition duration-[.3s]">
-              <a target="_blank" href="https://open.spotify.com/artist/3hMNx0PQLr940U2G2QQwWq?si=i-x2SOY8TAuuT7srb75lCw&nd=1">
+              <a
+                target="_blank"
+                href="https://open.spotify.com/artist/3hMNx0PQLr940U2G2QQwWq?si=i-x2SOY8TAuuT7srb75lCw&nd=1"
+              >
                 Spotify
               </a>
             </span>
@@ -52,15 +56,15 @@ const About = forwardRef((props, ref) => {
             <ul className="flex flex-col gap-y-2 ">
               <li className="skillsItem">
                 <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
-                NEXT.JS / REACT.JS
+                NEXT.JS
+              </li>
+              <li className="skillsItem">
+                <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
+                REACT.JS
               </li>
               <li className="skillsItem">
                 <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
                 VUE.JS
-              </li>
-              <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
-                SPRING
               </li>
             </ul>
             <ul className="flex flex-col gap-y-2">
