@@ -44,7 +44,7 @@ const Header = ({ handleClick }: { handleClick: (target: string) => void }) => {
           {/* <li className="headerLink">CONTACT</li> */}
         </ul>
         <a
-          href="https://drive.google.com/file/d/1DRy3-A-I-yJCKr5QDjZEqp-qFnhp7JBn/view"
+          href="https://drive.google.com/file/d/1I40n4ZrjbSNe6ZhE5FQ422h8f_M5GLFM/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

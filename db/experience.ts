@@ -12,6 +12,17 @@ export const experience = [
   },
   {
     id: 2,
+    position: "Frontend Developer",
+    company: "ASRM",
+    period: "June 2022 - December 2022",
+    description: [
+      "Maintained, developed, and designed the public website using Vue 2, Vuex, HTML5, and CSS",
+      "Adapted the website for mobile screens and ensured cross-browser compatibility",
+      "Leveraged Axios and Vuex for state management in the integration of the website with a RESTful API",
+    ],
+  },
+  {
+    id: 3,
     position: "Software Engineer",
     company: "BCPD LTD.",
     period: "April 2022 - October 2022",
@@ -21,15 +32,4 @@ export const experience = [
       "Collaborated closely with UI/UX designers and the team to plan and optimize the user journey",
     ],
   },
-  // {
-  //   id: 3,
-  //   position: "Frontend Developer",
-  //   company: "ASRM",
-  //   period: "September 2022 - January 2022",
-  //   description: [
-  //     "Maintained, developed, and designed the public website using Vue 2, Vuex, HTML5, and CSS",
-  //     "Responsible for mobile responsiveness, cross-browser compatibility, registration process, and UX design      ",
-  //     "Integrated website with RESTful API"
-  //   ]
-  // },
 ];
