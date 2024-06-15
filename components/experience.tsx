@@ -25,7 +25,7 @@ const Experience = forwardRef((props, ref) => {
       <h1 className="text-5xl text-[--redClr] px-5 md:px-0 text-center">
         Experience
       </h1>
-      <div className="mx-auto">
+      <div className="mx-auto w-[100%]">
         <ExpWidget />
       </div>
     </section>
