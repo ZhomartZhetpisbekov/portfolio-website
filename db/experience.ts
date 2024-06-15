@@ -1,6 +1,28 @@
 export const experience = [
   {
     id: 1,
+    position: "Frontend Developer",
+    company: "Broadcast Syndicate",
+    period: "March 2024 - Present",
+    description: [
+      "Developed new features for the company’s content website using Nuxt 3, Typescript, and Pinia",
+      "Optimized website performance by tracking Core Web Vitals (CWV) metrics and implementing Accelerated Mobile Pages (AMP) for faster loading times and improved SEO",
+      "Developed new website sections using WordPress with PHP, Twig templating, and SCSS for a dynamic and visually appealing user experience",
+    ],
+  },
+  {
+    id: 2,
+    position: "Frontend Developer",
+    company: "Morre.tech",
+    period: "November 2023 - March 2024",
+    description: [
+      "Developed and enhanced frontend features for a cryptotrading platform using Angular",
+      "Implemented real-time data updates via WebSockets to dynamically display price graph changes",
+      "Configured NgRx store for efficient state management, enabling seamless transaction history tracking and im- proving application performance",
+    ],
+  },
+  {
+    id: 3,
     position: "Software Engineer (Internship)",
     company: "Borderless",
     period: "June 2023 - Present",
@@ -11,7 +33,7 @@ export const experience = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     position: "Frontend Developer",
     company: "ASRM",
     period: "June 2022 - December 2022",
@@ -22,7 +44,7 @@ export const experience = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     position: "Software Engineer",
     company: "BCPD LTD.",
     period: "April 2022 - October 2022",

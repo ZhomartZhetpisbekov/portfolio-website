@@ -1,8 +1,4 @@
-import {
-  LanguageIcon,
-  PaperAirplaneIcon,
-  WrenchIcon,
-} from "@heroicons/react/24/outline";
+import { LanguageIcon, PaperAirplaneIcon, WrenchIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { forwardRef, useImperativeHandle, useRef } from "react";
 
@@ -18,26 +14,20 @@ const About = forwardRef((props, ref) => {
       md:px-24"
     >
       <div className="absolute top-0 left-0 -z-10 h-full w-full">
-        <Image
-          className="customBlur"
-          src="/images/night-moon.jpeg"
-          alt="Bridge in forest"
-          fill
-          objectFit="cover"
-        />
+        <Image className="customBlur" src="/images/night-moon.jpeg" alt="Bridge in forest" fill objectFit="cover" />
       </div>
       <h1 className="text-5xl text-[--redClr] w-full text-center">ABOUT ME</h1>
 
       <div className="flex flex-col items-center gap-y-5 lg:flex-row-reverse lg:justify-center lg:max-w-[58rem] lg:gap-x-10">
         <div className="flex flex-col gap-y-5 py-5">
           <p>
-            I am Zhomart Zhetpisbekov, dedicated Computer Science student with
-            strong foundation in system design, algorithms, and data structures.
-            Excellent leadership abilities and commendable communication skills,
-            effectively translating technical knowledge into actionable
-            strategies
+            I am Zhomart, and I enjoy building apps for myself and others (sometimes). I have an extensive knowledge of
+            web development, and trying to get better at mobile development. <br />
+            My main advantage is my curiosity combined with my learning abilities. My main drawback is that I get bored
+            when doing something alone. <br />
+            So, if you have some interesting ideas that you&apos;d like to share, hit me up!
           </p>
-          <p>
+          {/* <p>
             Besides coding, I really enjoy writing music. You can check out some
             of my songs on{" "}
             <span className="underline font-bold hover:text-[var(--redClr)] transition duration-[.3s]">
@@ -48,7 +38,7 @@ const About = forwardRef((props, ref) => {
                 Spotify
               </a>
             </span>
-          </p>
+          </p> */}
 
           {/* Tech Stack */}
           <p className="font-bold text-[--redClr]">TECH STACK:</p>
@@ -56,15 +46,15 @@ const About = forwardRef((props, ref) => {
             <ul className="flex flex-col gap-y-2 ">
               <li className="skillsItem">
                 <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
-                NEXT.JS
-              </li>
-              <li className="skillsItem">
-                <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
                 REACT.JS
               </li>
               <li className="skillsItem">
                 <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
                 VUE.JS
+              </li>
+              <li className="skillsItem">
+                <PaperAirplaneIcon className="w-3 h-3 text-[--redClr]" />
+                ANGULAR
               </li>
             </ul>
             <ul className="flex flex-col gap-y-2">
@@ -102,12 +92,7 @@ const About = forwardRef((props, ref) => {
           className="relative min-w-[20rem] max-w-[30rem] h-[20rem]
           lg:h-[20rem] lg:w-[28rem]"
         >
-          <Image
-            src="/images/me-waving.png"
-            alt="Zhomart waving"
-            fill
-            objectFit="cover"
-          />
+          <Image src="/images/me-waving.png" alt="Zhomart waving" fill objectFit="cover" />
         </div>
       </div>
     </section>
